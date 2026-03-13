@@ -1,0 +1,35 @@
+{
+  "name": "historia",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "test": "turbo test",
+    "lint": "turbo lint",
+    "type-check": "turbo type-check",
+    "clean": "turbo clean"
+  },
+  "devDependencies": {
+    "@turf/area": "^7.3.4",
+    "@turf/bbox": "^7.3.4",
+    "@turf/boolean-touches": "^7.3.4",
+    "@turf/centroid": "^7.3.4",
+    "@turf/helpers": "^7.3.4",
+    "@turf/simplify": "^7.3.4",
+    "@types/geojson": "^7946.0.16",
+    "@types/topojson-client": "^3.1.5",
+    "topojson-client": "^3.1.0",
+    "turbo": "^2.4.0",
+    "typescript": "^5.7.0",
+    "world-atlas": "^2.0.2"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "packageManager": "npm@11.4.2"
+}

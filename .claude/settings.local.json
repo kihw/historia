@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install)",
+      "Bash(npx tsc --noEmit)",
+      "Bash(npx tsc)",
+      "Bash(npm install world-atlas topojson-client)",
+      "Bash(npm install -D @types/topojson-client)",
+      "Bash(node -e \"const d = require\\(''c:/Users/kihwo/Documents/code/historia/node_modules/world-atlas/countries-110m.json''\\); console.log\\(''type:'', d.type\\); console.log\\(''objects:'', Object.keys\\(d.objects\\)\\); const countries = d.objects.countries; console.log\\(''countries type:'', countries.type\\); console.log\\(''nb geometries:'', countries.geometries.length\\); console.log\\(''first geometry:'', JSON.stringify\\(countries.geometries[0]\\).substring\\(0, 300\\)\\);\")",
+      "Bash(node -e \"const d = require\\(''c:/Users/kihwo/Documents/code/historia/node_modules/world-atlas/countries-110m.json''\\); d.objects.countries.geometries.forEach\\(g => console.log\\(g.id, g.properties.name\\)\\);\")",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(node -e \":*)",
+      "Bash(npm run build)",
+      "Bash(wc -l c:/Users/kihwo/Documents/code/historia/apps/web/src/app/game/\\\\[id\\\\]/page.tsx)",
+      "Bash(npx turbo build)",
+      "Bash(npm install --save-dev @turf/simplify @turf/boolean-touches @turf/helpers @turf/area @turf/centroid @turf/bbox @types/geojson)",
+      "WebFetch(domain:github.com)",
+      "Bash(npx tsx tools/geo/download-historical-maps.ts)",
+      "Bash(npx tsx tools/geo/generate-scenario.ts)",
+      "Bash(npm run type-check)",
+      "Bash(npx tsc --noEmit -p apps/web/tsconfig.json)",
+      "Bash(node -e \"const d = JSON.parse\\(require\\(''fs''\\).readFileSync\\(''scenarios/templates/europe-1444.json'',''utf8''\\)\\); console.log\\(''Bounds:'', JSON.stringify\\(d.map.bounds\\)\\); console.log\\(''Provinces:'', d.map.provinces.length\\); console.log\\(''Nations:'', d.nations.length\\); console.log\\(''Sample countries:'', d.nations.slice\\(0,10\\).map\\(n=>n.name\\).join\\('', ''\\)\\)\")",
+      "Bash(npx tsc --noEmit -p apps/server/tsconfig.json)",
+      "Bash(npm install -D world-atlas topojson-client @types/topojson-client)",
+      "Bash(npx tsx tools/fill-scenarios.ts)",
+      "Bash(npx turbo test)"
+    ]
+  }
+}

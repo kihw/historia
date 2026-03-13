@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "id": "sandbox-empty",
+    "name": "Empty Sandbox",
+    "version": "1.0.0",
+    "author": "Historia Team",
+    "description": "A blank world for creating your own scenarios.",
+    "era": "custom",
+    "startDate": { "year": 2000, "month": 1 },
+    "tags": ["sandbox", "custom"],
+    "difficultySuggestion": "easy",
+    "recommendedPlayers": { "min": 1, "max": 8 }
+  },
+  "config": {
+    "determinism": {
+      "simulationIntensity": 0.3,
+      "historicalConstraint": 0.0,
+      "fantasyFreedom": 0.8
+    },
+    "turnDuration": {
+      "default": "1_month",
+      "options": ["1_week", "1_month", "3_months", "6_months", "1_year"]
+    },
+    "victoryConditions": [
+      {
+        "type": "score",
+        "description": "Highest combined score after 100 turns"
+      }
+    ]
+  },
+  "map": {
+    "type": "province",
+    "projection": "mercator",
+    "bounds": { "north": 72, "south": -60, "west": -180, "east": 180 },
+    "terrainTypes": ["plains", "hills", "mountains", "forest", "desert", "ocean", "coastal"],
+    "provinces": []
+  },
+  "nations": [],
+  "events": {
+    "causalGraph": {
+      "nodes": [],
+      "edges": []
+    }
+  },
+  "narrative": {
+    "introduction": "A new world awaits. Shape it as you see fit.",
+    "style": "historical_chronicle",
+    "tone": "formal",
+    "vocabularyEra": "modern"
+  }
+}

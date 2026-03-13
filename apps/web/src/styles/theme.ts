@@ -1,0 +1,71 @@
+export const theme = {
+  colors: {
+    bg: {
+      base: '#0a0a0a',
+      card: '#111111',
+      cardHover: '#161616',
+      elevated: '#1a1a1a',
+      overlay: 'rgba(10,10,10,0.92)',
+    },
+    border: {
+      subtle: '#1a1a1a',
+      default: '#222222',
+      strong: '#333333',
+      accent: '#2563eb44',
+    },
+    accent: {
+      primary: '#2563eb',
+      primaryHover: '#3b82f6',
+      primaryMuted: '#1e40af',
+      primaryGlow: 'rgba(37,99,235,0.3)',
+    },
+    text: {
+      primary: '#e0e0e0',
+      secondary: '#888888',
+      muted: '#555555',
+      accent: '#60a5fa',
+    },
+    semantic: {
+      success: '#4ade80',
+      warning: '#fbbf24',
+      danger: '#f87171',
+      info: '#60a5fa',
+      diplomatic: '#a78bfa',
+    },
+  },
+  spacing: {
+    xs: '0.25rem',
+    sm: '0.5rem',
+    md: '1rem',
+    lg: '1.5rem',
+    xl: '2rem',
+    xxl: '3rem',
+  },
+  radius: {
+    sm: '4px',
+    md: '8px',
+    lg: '12px',
+    xl: '16px',
+  },
+  fontSize: {
+    xs: '0.72rem',
+    sm: '0.82rem',
+    base: '0.9rem',
+    md: '1rem',
+    lg: '1.2rem',
+    xl: '1.5rem',
+    xxl: '2rem',
+    hero: '3rem',
+  },
+  shadow: {
+    sm: '0 1px 3px rgba(0,0,0,0.3)',
+    md: '0 4px 12px rgba(0,0,0,0.4)',
+    lg: '0 8px 30px rgba(0,0,0,0.5)',
+    glow: (color: string) => `0 0 20px ${color}22, 0 0 40px ${color}11`,
+  },
+  transition: {
+    fast: '0.15s ease',
+    normal: '0.25s ease',
+    slow: '0.4s ease',
+  },
+} as const;
